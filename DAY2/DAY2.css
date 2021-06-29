@@ -1,0 +1,17 @@
+hr{
+  background-color: #02023a;
+  height: 6px;
+}
+a{
+  text-decoration: underline;
+  color: #000;
+}
+a:hover{
+  color: aquamarine;
+}
+a:active{
+  color: green;
+}
+a:visited{
+  color: rgb(139, 58, 49);
+}
