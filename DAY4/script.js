@@ -13,3 +13,7 @@ function updateClock(){
   m.style.transform = `rotateZ(${min}deg)`;
   h.style.transform = `rotateZ(${hour}deg)`
 }
+function toggleClass(){
+  const body= document.querySelector('body');
+body.classList.toggle('light');
+}
