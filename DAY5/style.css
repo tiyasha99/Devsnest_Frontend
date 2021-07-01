@@ -5,7 +5,7 @@ body{
   margin: 0;
   padding: 50px 0px;
   background-color: blue; 
-  background-image: linear-gradient(to left top, #0052b0, #502d50); 
+  background-image: linear-gradient(to left top,  #a378aa, #57295e); 
 }
 
 button.clear{
