@@ -11,3 +11,5 @@ Day-04: Analog Clock using HTML,CSS and JavaScript (With Light and dark Mode)
 Day-05: Scientific calculator using HTML,CSS and JavaScript
 
 Day-06: Goofing around with arrays and functions
+
+Day-07: Questions on javascript objects
