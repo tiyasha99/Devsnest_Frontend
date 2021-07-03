@@ -13,3 +13,9 @@ Day-05: Scientific calculator using HTML,CSS and JavaScript
 Day-06: Goofing around with arrays and functions
 
 Day-07: Questions on javascript objects
+
+Day-08: Checkboxes and grids
+
+Day-09: Javascript call,bind,apply.
+
+Day-10: Card Memory game
