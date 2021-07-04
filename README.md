@@ -19,3 +19,5 @@ Day-08: Checkboxes and grids
 Day-09: Javascript call,bind,apply.
 
 Day-10: Card Memory game
+
+Day-11: Quiz using HTMl, CSS and javascript. Also used the local storage.

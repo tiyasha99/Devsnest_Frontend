@@ -39,7 +39,7 @@ body{
   background: #333;
   backface-visibility: hidden;
   
-}
+} 
 
 .front-face{
   transform: rotateY(180deg)
