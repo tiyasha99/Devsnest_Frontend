@@ -1,27 +1,61 @@
-const me = {
-  fullname: function(){
-    return this.firstName + " " + this.lastName;
+const container = document.querySelector('.container');
+const seats = document.querySelectorAll('.row .seat:not(.occupied');
+const count = document.getElementById('count');
+const total = document.getElementById('INR');
+const movieSelect = document.getElementById('movies');
+
+
+let ticketPrice = +movieSelect.value;
+
+// Save selected movie index and price
+function setMovieData(movieIndex, moviePrice) {
+  localStorage.setItem('selectedMovieIndex', movieIndex);
+  localStorage.setItem('selectedMoviePrice', moviePrice);
+}
+
+// update total and count
+function updateSelectedCount() {
+  const selectedSeats = document.querySelectorAll('.row .seat.selected');
+
+  const seatsIndex = [...selectedSeats].map((seat) => [...seats].indexOf(seat));
+
+  localStorage.setItem('selectedSeats', JSON.stringify(seatsIndex));
+
+  //copy selected seats into arr
+  // map through array
+  //return new array of indexes
+
+  const selectedSeatsCount = selectedSeats.length;
+
+  count.innerText = selectedSeatsCount;
+  total.innerText = selectedSeatsCount * ticketPrice;
+}
+
+// get data from localstorage and populate ui
+
+
+  const selectedMovieIndex = localStorage.getItem('selectedMovieIndex');
+
+  if (selectedMovieIndex !== null) {
+    movieSelect.selectedIndex = selectedMovieIndex;
   }
-}
 
-const me1 = {
-  fullname: function(city, state){
-    return this.firstName + " " + this.lastName+ "," + city+ "," + state;
+
+// Movie select event
+movieSelect.addEventListener('change', (e) => {
+  ticketPrice = +e.target.value;
+  setMovieData(e.target.selectedIndex, e.target.value);
+  updateSelectedCount();
+});
+
+// Seat click event
+container.addEventListener('click', (e) => {
+  if (e.target.classList.contains('seat') && !e.target.classList.contains('occupied')) {
+    e.target.classList.toggle('selected');
+
+    updateSelectedCount();
   }
-}
+});
 
-const student1 = {
-  firstName: "Tiyasha",
-  lastName: "Das"
-}
-
-const student2 = {
-  firstName: "Nihal",
-  lastName: "Prakash"
-}
-
-console.log(me.fullname.call(student1));
-console.log(me.fullname.call(student2));
-
-
-console.log(me1.fullname.call(student1, 'Alipurduar', 'West Bengal'));
+// intial count and total
+updateSelectedCount();

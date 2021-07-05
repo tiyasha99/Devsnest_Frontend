@@ -1,0 +1,138 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background: #444;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: Poppins, sans-serif;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+#movies{
+  background: #444;
+  align-items: center;
+  color: white;
+  font-family: Poppins, sans-serif;
+  margin-left: 0.1rem;
+}
+.movie-background label{
+  margin-left: 2rem;
+}
+
+.movie-background{
+  margin:20px 0;
+}
+
+.container{
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
+.options{
+  height: 12px;
+  width: 15px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: inline;
+}
+
+.options{
+  padding: 5px 10px;
+  color: white;
+  list-style-type: none;
+}
+
+.options li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.options li small {
+  margin-left: 10px;
+}
+
+.seat.selected{
+  background-color: rgb(78, 78, 192);
+  position: relative;
+  top: 0.35rem;
+}
+
+.seat.na{
+  background-color: grey;
+  position: relative;
+  top: 0.35rem;
+}
+
+.seat.occupied{
+  position: relative;
+  top: 0.35rem;
+}
+
+.movie-background p{
+  position: absolute;
+  bottom: 2rem; 
+}
+.row{
+  display: flex;
+  margin-left: 4rem;
+}
+.container .screen{
+  background-color: #fff;
+  height: 7.5rem;
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.seat{
+  background-color: white;
+  height: 1rem;
+  width:1rem;
+  margin: 0.25rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: inline-block;
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  background-color: #9295ee;
+}
+
+.options .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.movie-background p span{
+  color: rgb(221, 161, 71);
+}
+
+.seat:nth-of-type(2) {
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+
+#taken:hover{
+  cursor: not-allowed;
+}
+#taken{
+  background-color: gray;
+}
+
+.selected-seat{
+  background-color: rgb(13, 134, 13);
+}
