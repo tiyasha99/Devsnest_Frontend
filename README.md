@@ -16,8 +16,10 @@ Day-07: Questions on javascript objects
 
 Day-08: Checkboxes and grids
 
-Day-09: Javascript call,bind,apply.
+Day-09: Javascript call,bind,apply and movie seat booking.
 
 Day-10: Card Memory game
 
 Day-11: Quiz using HTMl, CSS and javascript. Also used the local storage.
+
+Day-12: Todo list using local storage
