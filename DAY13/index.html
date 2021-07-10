@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Covid Tracker</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+</head>
+<body class="loading">
+  <div class="nav-wrapper">
+    <div class="container-nav">
+        <div class="nav">
+            <a href="" class="logo">
+                C<i class="bx bxs-virus-block bx-tada"></i>VID TRACKER
+            </a>
+        </div>
+    </div>
+</div>
+<div class="box">
+    <div class="container">
+        <h1 class="heading">Covid-19 Live Updates</h1>
+        <table class="table table-striped table-bordered table-hover table-condensed">
+            <tr>
+              <th style="color: aliceblue;">Total Cases</th>
+              <th style="color: aliceblue;">Total Recovered</th>
+              <th style="color: aliceblue;">Total Deaths</th>
+            </tr>
+            <tr id="data">
+            </tr>
+          </table>
+          <br>
+          <button type="button"class= "button">
+        Refresh</button>
+        
+    </div>
+</div>
+
+<!-- footer -->
+<div class="footer">
+    Source from <a href="https://documenter.getpostman.com/view/10808728/SzS8rjbc#b07f97ba-24f4-4ebe-ad71-97fa35f3b683" target="_blank">api.covid19api.com</a>
+    <br>
+    Designed by Tiyasha Das
+</div>
+<!-- end footer -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
