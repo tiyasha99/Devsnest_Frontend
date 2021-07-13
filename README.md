@@ -27,3 +27,5 @@ Day-12: Todo list using local storage
 DAY-13: Used Covid 19 api to fetch live updates
 
 DAY-14: Goofing around with mouse events and key events
+
+DAY-15: Just getting started with React
