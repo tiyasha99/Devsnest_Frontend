@@ -22,6 +22,20 @@ Day-10: Card Memory game
 
 Day-11: Quiz using HTMl, CSS and javascript. Also used the local storage.
 
+Day-12: To do list using HTML, materialize and javascript
+
+Day-13: Covid Information display using a covid api
+
+Day-14: Playing around with mouse and keyboard events
+
+Day-15: Getting started with react
+
+Day-16: Meme Card and Chess board with react
+
+Day-22: Meme Generator
+
+
+
 Day-12: Todo list using local storage
 
 DAY-13: Used Covid 19 api to fetch live updates
